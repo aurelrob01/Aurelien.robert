@@ -26,6 +26,13 @@ section {
     margin: auto; /* Centrer horizontalement */
 }
 
+section img {
+    max-width: 100%;
+    height:auto;
+    display:block;
+    margin:20px 0;
+}
+
 footer {
     padding: 10px 0;
     background-color: #333;
