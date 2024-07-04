@@ -43,7 +43,7 @@
         </div>
         <h1>Carte de la répartition des forêts</h1>
         <div class="carte">
-            <img src="12_A_INDICE_DE_FRAGILITÉ_SOCIALE_D21.png" alt="Carte de la répartition forestière">
+            <img src="images/12_A_INDICE_DE_FRAGILITÉ_SOCIALE_D21.png" alt="Carte de la répartition forestière">
             <p>
                 En regroupant les différentes essences avec des requêtes symbologiques, j'ai pu classer selon les grandes familles d'arbres. Par la suite, j'ai calculé un taux de <br>
                 boisement par communes. 
@@ -51,18 +51,54 @@
         </div>
         <h1>Carte des communes de Côte d'Or</h1>
         <div class="carte">
-            <img src="4_A_CARTE_PRESENTATION_GENERALE_D21.png" alt="Carte des communes">
+            <img src="images/4_A_CARTE_PRESENTATION_GENERALE_D21.png" alt="Carte des communes">
             <p>
-                La problématique majeure autour de cette carte était le représentation lisible de 698 communes sur un format A4. De ce fait, nous avons opté pour une grille de type <br>
+                La problématique majeure autour de cette carte était la représentation lisible de 698 communes sur un format A4. De ce fait, nous avons opté pour une grille de type <br>
                 "bataille navale" pour repérer une commune. Un index avec les numéros et les noms de chaque commune accompagne la carte.
             </p>
         </div>
         <h1>Carte des protections environnementales en vigueur</h1>
         <div class="carte">
-            <img src="31_A_CARTE_PROTECTIONS_ENVIRONNEMENTALES_D21.png" alt="Carte des protections environnementales en vigueur">
+            <img src="images/31_A_CARTE_PROTECTIONS_ENVIRONNEMENTALES_D21.png" alt="Carte des protections environnementales en vigueur">
              <p>
                 Le défi ici était de conjuguer une multitude de styles due au grand nombre de couches, tant de polygones que de points. L'ordre des couches était tout aussi important.
              </p>
+        </div>
+        <h2>Mes dataviz</h2>
+        <p>
+            À présent, voici quelques graphiques réalisés avec RStudio. Je mettrais quelques codes dans le dépôt. 
+        </p>
+        <h1>Graphique de l'évolution de la Surface Agricole Utile</h1>
+        <div class="graphique">
+            <img src="images/grapique_evolution_sau.png" alt="graphique de l'évolution de la SAU">
+            <p>
+                Je voulais quelque chose d'épuré et de simple à lire. J'ai également fait le choix de comparer avec le niveau national, je trouve cela toujours pertinent. 
+            </p>
+        </div>
+        <h1>Graphique de l'évolution de la population départementale</h1>
+        <div class="graphique">
+            <img src="images/evol_pop.png" alt="graphique de l'évolution de la population">
+            <p>
+                Le package Cairo dans Rstudio permet d'exporter des images dans les différents formats  (SVG,PNG, PDF...). Après l'export, je retouche dans Inkskape pour donner un aspect <br>
+                plus "graphique" à la dataviz. Là aussi, j'ai voulu comparer les chiffres avec les extrêmes, et aussi le niveau national. 
+            </p>
+        </div>
+        <h1>Graphique du nombre d'exploitations agricoles</h1>
+        <div class="graphique">
+            <img src="images/graphique_nb_exploit.png" alt="graphique du nombre d'exploitations agricoles">
+            <p>
+                Ce graphique fait partie d'un tableau de bord destiné au thème de l'agriculture dans l'atlas cartographique. Le besoin se tournait davantage vers des chiffres et des graphiques <br>
+                que des cartes. 
+            </p>
+        </div>
+        <h1>Graphique des orientations technico-économiques des exploitations agricoles</h1>
+        <div class="graphique">
+            <img src="images/otex_pra.png" alt="graphique des orientations technico-économiques des exploitations agricoles">
+            <p>
+                La difficulté dans la création de ces graphiques a été d'accorder une seule légende pour chaque donut. Au départ, je pensais faire tous les graphiques à la suite, puis ensuite les <br>
+                rassembler dans une grille virtuelle (facet_wrap). J'ai plutôt opté pour une boucle qui automatise le processus en indiquant bien une seule légende. Pour cela, j'ai directement indiqué <br>
+                que chaque élément de légende serait associé à une couleur dans une liste prédéfinie. Le code sera disponible au besoin. 
+            </p>
         </div>
     </section>
     <footer>
