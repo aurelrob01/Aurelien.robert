@@ -31,9 +31,19 @@ section img {
     height:auto;
     display:block;
     margin:20px 0;
+    justify-content:center;
 }
 
 .carte {
+    margin-bottom:40px;
+    justify-content:center;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background-color: #fff;
+}
+
+.graphique {
     margin-bottom:40px;
     justify-content:center;
     padding:20px;
