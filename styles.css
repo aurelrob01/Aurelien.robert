@@ -36,6 +36,10 @@ section img {
 .carte {
     margin-bottom:40px;
     justify-content:center;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background-color: #fff;
 }
 
 p {
