@@ -230,13 +230,11 @@ plot_grid(plotlist = donut_list, ncol = 3, align = "hv", axis = "lbr", labels = 
 ###
 
 
-# Ajouter une colonne pour identifier chaque groupe
 data_list_combined <- lapply(seq_along(data_list), function(i) {
   data_list[[i]]$group <- names(data_list)[i]
   return(data_list[[i]])
 }) %>% bind_rows()
 
-# Assurez-vous que lib_oteft est un facteur pour conserver l'ordre des couleurs
 data_list_combined$lib_oteft <- factor(data_list_combined$lib_oteft, levels = unique(data_list_combined$lib_oteft))
 
 gg <- ggplot(data_list_combined, aes(ymax = ymax, ymin = ymin, xmax = 4, xmin = 3, fill = lib_oteft)) +
